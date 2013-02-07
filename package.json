@@ -1,6 +1,6 @@
 {
-  "name": "node-crashreporter",
-  "version": "0.0.0",
+  "name": "crashreporter",
+  "version": "0.0.1",
   "description": "Dump node info on process uncaughException exception",
   "main": "lib/crashreporter.js",
   "scripts": {
