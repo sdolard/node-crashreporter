@@ -4,7 +4,7 @@ node-crashreporter
 Dump node info on process uncaughtException exception
 
 
-## Installing netasqcomm
+## Installing crashreporter
 
 ```
 [sudo] npm install [-g] crashreporter
