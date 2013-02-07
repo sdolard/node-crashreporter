@@ -1,0 +1,25 @@
+{
+  "name": "node-crashreporter",
+  "version": "0.0.0",
+  "description": "Dump node info on process uncaughException exception",
+  "main": "lib/crashreporter.js",
+  "scripts": {
+    "pretest": "jsrevival -p \"describe, it\" -o \"properties: false, maxlen: 0, debug: false, bitwise: false, eqeq: false, newcap: false, undef: false, unparam: false, vars: false\" -r cli-hide-valid -R lib/ test/",
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sdolard/node-crashreporter.git"
+  },
+  "keywords": [
+    "crash",
+    "report"
+  ],
+  "author": "sdolard@gmail.com",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "devDependencies" : {
+    "jsrevival": "0.1.x",
+    "mocha": "x.x.x"
+  }
+}
