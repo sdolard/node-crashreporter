@@ -13,7 +13,7 @@ Dump node context into a file on process crash, send it by mail
 ## Usage
 ### Basic
 ```javascript
-require('rashreporter');                               
+require('crashreporter');                               
 		
 ```
 
