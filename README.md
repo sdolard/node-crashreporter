@@ -19,13 +19,33 @@ require('rashreporter');
 
 ### More
 ```javascript
-require('rashreporter').configure({
+require('crashreporter').configure({
 	outDir: <your out directory>, // default to cwd
-	exitOnCrash: <true|false> // if you want that crash reporter exit(1)
+	exitOnCrash: <true|false> // if you want that crash reporter exit(1) for you, default to true
 });
 		
 ```
 
+### Advanced: send mail
+See http://www.nodemailer.com/ for support
+```javascript
+require('crashreporter').configure({
+	mailEnabled: true,
+	mailTransportName: 'SMTP',
+	mailTransportConfig: {
+		service: 'Gmail',
+		auth: {
+			user: "yourmail@gmail.com",
+		    pass: "yourpass"
+		}
+	},
+	mailSubject: 'advanced.js crashreporter test',
+	mailFrom: 'crashreporter <yourmail@gmail.com>',
+	mailTo: 'yourmail@gmail.com'
+});
+throw new Error('foo');                             
+		
+```
 
 ## File
 ### Name

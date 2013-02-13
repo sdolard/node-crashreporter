@@ -1,7 +1,7 @@
 {
   "name": "crashreporter",
-  "version": "0.0.1",
-  "description": "Dump node info on process uncaughException exception",
+  "version": "0.0.2",
+  "description": "Dump node context into a file on process crash, send it by mail",
   "main": "lib/crashreporter.js",
   "scripts": {
     "pretest": "jsrevival -p \"describe, it\" -o \"properties: false, maxlen: 0, debug: false, bitwise: false, eqeq: false, newcap: false, undef: false, unparam: false, vars: false\" -r cli-hide-valid -R lib/ test/",
@@ -15,10 +15,16 @@
     "crash",
     "report"
   ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
   "author": "sdolard@gmail.com",
   "license": "BSD",
   "readmeFilename": "README.md",
-  "devDependencies" : {
+  "dependencies" : {
+    "nodemailer": "0.3.x"
+  },
+   "devDependencies" : {
     "jsrevival": "0.1.x",
     "mocha": "x.x.x"
   }
