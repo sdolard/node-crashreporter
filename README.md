@@ -1,7 +1,7 @@
 node-crashreporter
 ==================
 
-Dump node info on process uncaughtException exception
+Dump node context into a file on process crash, send it by mail
 
 
 ## Installing crashreporter
