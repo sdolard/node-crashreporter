@@ -20,8 +20,9 @@ require('crashreporter');
 ### More
 ```javascript
 require('crashreporter').configure({
-	outDir: <your out directory>, // default to cwd
-	exitOnCrash: <true|false> // if you want that crash reporter exit(1) for you, default to true
+	outDir: [your out directory], // default to cwd
+	exitOnCrash: [true|false] // if you want that crash reporter exit(1) for you, default to true,
+	maxCrashFile: [number] // older files will be removed up, default 5 files are kept
 });
 		
 ```
@@ -52,20 +53,27 @@ crash_YYYY-MM-DD_HH-mm-ss_zzz_UTC.txt
 
 ### Dump
 ```
+Date time: 
 -----------------------
-environnement var:
+execPath: 
 -----------------------
-gid: 
+argv: 
 -----------------------
-uid: 
+current directory: 
 -----------------------
-pid: 
+env:
 -----------------------
-process title: 
+gid:
 -----------------------
-uptime (sec):
+uid:
 -----------------------
-arch: 
+pid:
+-----------------------
+process title:
+-----------------------
+uptime (sec): 
+-----------------------
+arch: x
 -----------------------
 versions:
 -----------------------

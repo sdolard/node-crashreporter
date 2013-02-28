@@ -1,6 +1,6 @@
 {
   "name": "crashreporter",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Dump node context into a file on process crash, send it by mail",
   "main": "lib/crashreporter.js",
   "scripts": {
@@ -22,7 +22,8 @@
   "license": "BSD",
   "readmeFilename": "README.md",
   "dependencies" : {
-    "nodemailer": "0.3.x"
+    "nodemailer": "0.3.x",
+    "mkdirp": "0.3.x"
   },
    "devDependencies" : {
     "jsrevival": "0.1.x",
