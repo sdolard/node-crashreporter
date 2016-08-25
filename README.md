@@ -7,13 +7,13 @@ Dump node context into a file on process crash, send it by mail
 ## Installing crashreporter
 
 ```
-[sudo] npm install [-g] crashreporter
+[sudo] npm install node-crash-reporter
 ```
 
 ## Usage
 ### Basic
 ```javascript
-require('crashreporter');                               
+require('crashreporter');
 		
 ```
 
@@ -24,7 +24,8 @@ require('crashreporter').configure({
 	exitOnCrash: [true|false] // if you want that crash reporter exit(1) for you, default to true,
 	maxCrashFile: [number] // older files will be removed up, default 5 files are kept
 });
-		
+
+
 ```
 
 ### Advanced: send mail
