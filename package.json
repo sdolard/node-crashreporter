@@ -1,7 +1,7 @@
 {
-  "name": "crashreporter",
+  "name": "node-crash-reporter",
   "version": "1.0.0",
-  "description": "node-crashreporter ==================",
+  "description": "Dump node context into a file on process crash, send it by mail",
   "directories": {
     "example": "example",
     "test": "test"
