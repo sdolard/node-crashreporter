@@ -1,32 +1,27 @@
 {
   "name": "crashreporter",
-  "version": "0.0.4",
-  "description": "Dump node context into a file on process crash, send it by mail",
-  "main": "lib/crashreporter.js",
+  "version": "1.0.0",
+  "description": "node-crashreporter ==================",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "nodemailer": "^2.5.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "pretest": "jsrevival -p \"describe, it\" -o \"properties: false, maxlen: 0, debug: false, bitwise: false, eqeq: false, newcap: false, undef: false, unparam: false, vars: false\" -r cli-hide-valid -R lib/ test/",
-    "test": "mocha -R spec"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/sdolard/node-crashreporter.git"
+    "url": "git+https://github.com/joaquinicolas/node-crashreporter.git"
   },
-  "keywords": [
-    "crash",
-    "report"
-  ],
-  "engines": {
-    "node": ">= 0.8.0"
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaquinicolas/node-crashreporter/issues"
   },
-  "author": "sdolard@gmail.com",
-  "license": "BSD",
-  "readmeFilename": "README.md",
-  "dependencies" : {
-    "nodemailer": "0.3.x",
-    "mkdirp": "0.3.x"
-  },
-   "devDependencies" : {
-    "jsrevival": "0.1.x",
-    "mocha": "x.x.x"
-  }
+  "homepage": "https://github.com/joaquinicolas/node-crashreporter#readme"
 }
