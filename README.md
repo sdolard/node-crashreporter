@@ -1,5 +1,7 @@
 # node-crashreporter
 
+node-crashreporter [![Build Status](https://travis-ci.org/sdolard/node-crashreporter.png?branch=master)](https://travis-ci.org/sdolard/node-crashreporter)[![Build Dependency](https://david-dm.org/sdolard/node-crashreporter.png)](https://david-dm.org/sdolard/node-crashreporter)
+
 Dump node context into a file on process crash, send it by mail
 
 ## Installing crashreporter
