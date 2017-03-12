@@ -49,6 +49,40 @@ require('crashreporter').configure({
 });
 ```
 
+### Hidden Attributes
+
+Hidden Attribute hide items in the email.
+
+```
+require('crashreporter').configure({
+    ...
+    hiddenAttributes: ['versions', 'error'],
+    ...
+});
+```
+
+####  Options
+
+* dateTime
+* execPath
+* argv
+* currentDirectory
+* env
+* currentDirectory
+* env
+* pid
+* gid
+* uid
+* processTitle
+* uptime
+* arch
+* versions
+* memoryUsage
+* requireCache
+* activeHandle
+* activeRequest
+* stack
+
 ## File
 
 ### Name
